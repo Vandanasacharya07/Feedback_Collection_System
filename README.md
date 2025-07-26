@@ -75,7 +75,7 @@ Feedback_System/
 
 ## Author
 
-- **Vandana Acharya**  
+- Vandana Acharya  
   GitHub: [@Vandanasacharya07](https://github.com/Vandanasacharya07)
 
 ---
