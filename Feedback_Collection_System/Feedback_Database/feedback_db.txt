@@ -1,0 +1,20 @@
+--Code to create feedback database in MySQL
+CREATE TABLE feedback (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    rating INT NOT NULL,
+    comments TEXT,
+    reviewed BOOLEAN DEFAULT FALSE,
+    submission_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+--Code to create the admin database in MySQL
+CREATE TABLE IF NOT EXISTS admins (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL  
+);
+
+-- Code to Insert admin username and password in MySQL
+INSERT INTO admins (username, password) VALUES 
+('admin', 'admin');
